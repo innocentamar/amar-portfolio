@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #343a40;
+  padding: 100px 0;
+  color: white;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-title span {
+  color: #ff5722;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.hero-button {
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+}
+
+.hero-image {
+  margin-top: 50px;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* About Section */
+.about-section {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #343a40;
+}
+
+.about-description {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #6c757d;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #ff5722;
+  border-color: #ff5722;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+  border-color: #e64a19;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+
+  .hero-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

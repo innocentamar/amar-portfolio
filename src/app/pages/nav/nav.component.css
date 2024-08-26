@@ -1,0 +1,60 @@
+.navbar {
+    background-color: #343a40;
+    padding: 1rem 2rem;
+  }
+  
+  .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  
+  .navbar-brand i {
+    margin-right: 8px;
+  }
+  
+  .nav-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    color: #ffffff;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #ff5722;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #ffffff;
+  }
+  
+  .navbar-dark .navbar-toggler {
+    border-color: transparent;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    margin: 0 10px;
+  }
+  
+  @media (max-width: 992px) {
+    .navbar-nav {
+      flex-direction: column;
+    }
+  }
+  
