@@ -1,49 +1,76 @@
 /* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: #333;
   background-color: #f8f9fa;
 }
 
+/* Container */
 .container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-/* Hero Section */
-.hero-section {
-  background-color: #343a40;
-  padding: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   color: white;
+  background: #000000;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.hero-title {
+/* Text and Image Containers */
+.text-container {
+  text-align: center;
+}
+
+.text-container h1 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 4px 90px 1px 121px;
 }
 
-.hero-title span {
-  color: #ff5722;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin-top: 10px;
-}
-
-.hero-button {
-  margin-top: 30px;
-  padding: 15px 30px;
-  font-size: 1.1rem;
-}
-
-.hero-image {
-  margin-top: 50px;
-}
-
-.hero-image img {
+.image-container img {
   max-width: 100%;
   height: auto;
+  border-radius: 10px;
+}
+
+/* Typing Animation */
+.typing {
+  display: inline-block;
+  border-right: 2px solid #fff; /* Cursor effect */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(100, end), blink 0.75s step-end infinite;
+  font-family: 'Chakra Petch', serif; /* Apply the unique font */
+  font-weight: 500; /* Adjust weight as needed */
+  color: #fff; /* Ensure text is visible */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
 }
 
 /* About Section */
@@ -67,29 +94,14 @@ body {
   margin-right: auto;
 }
 
-/* Button Styling */
-.btn-primary {
-  background-color: #ff5722;
-  border-color: #ff5722;
-}
-
-.btn-primary:hover {
-  background-color: #e64a19;
-  border-color: #e64a19;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.5rem;
+  .container {
+    flex-direction: column;
+    align-items: center;
   }
-
-  .hero-subtitle {
-    font-size: 1.3rem;
-  }
-
-  .hero-button {
-    font-size: 1rem;
-    padding: 10px 20px;
+  
+  .text-container h1 {
+    font-size: 2rem;
   }
 }

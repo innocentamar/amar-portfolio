@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -11,5 +11,16 @@ export class NavComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  // @HostListener('window:scroll', [])
+  // onWindowScroll() {
+  //   const navbar = document.querySelector('.navbar') as HTMLElement;
+  //   if (window.pageYOffset > 50) {
+  //     navbar.classList.add('scrolled');
+  //   } else {
+  //     navbar.classList.remove('scrolled');
+  //   }
+  // }
+
 
 }

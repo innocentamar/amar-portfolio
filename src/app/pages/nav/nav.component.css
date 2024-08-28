@@ -1,92 +1,29 @@
+/* Navbar customization */
 .navbar {
-  background-color: #343a40;
-  padding: 1rem 2rem;
-}
-
-.navbar-brand {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  color: #ffffff;
-}
-
-.navbar-brand i {
-  margin-right: 8px;
-}
-
-.nav-link {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.1rem;
-  color: #ffffff;
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-  color: #ff5722;
-}
-
-.navbar-toggler-icon {
-  background-color: #ffffff;
-}
-
-.navbar-dark .navbar-toggler {
-  border-color: transparent;
-}
-
-.shadow-sm {
-  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
-}
-
-.container {
-  display: flex;
-  justify-content: space-between; /* Changed to space-between to position brand and toggler properly */
-  align-items: center;
-}
-
-.navbar-nav {
-  flex-direction: row;
-  justify-content: center;
-}
-
-.nav-item {
-  margin: 0 10px;
-}
-
-@media (max-width: 992px) {
-  .navbar-nav {
-    flex-direction: column;
-    width: 100%; /* Ensure nav items take full width */
+  position: fixed;
+  /* opacity: 0.8; */
+    width: 100%;
+    right: 0;
+    height: 85px;
+    z-index: 12;
+    padding: 2rem 0;
+    background: #000000 !important;
     
-  }
-  
-  .nav-item {
-    margin: 5px 0; /* Adjust margin for mobile view */
-  }
-
-  .container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  /* You can adjust color as per your theme, for example: */
-  background-color: #ffffff; /* Ensures visibility */
+.sticky-top {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
-.navbar-toggler {
-  border: none; /* Remove the border */
-  outline: none; /* Remove the outline */
+.navbar-nav .nav-link {
+  padding: 10px 20px;
+  color: white;
 }
 
-.navbar-toggler-icon {
-  width: 1.5rem; /* Adjust the size */
-  height: 1.5rem;
-  background-color: #ffffff; /* Ensure it contrasts with your navbar background */
-  border-radius: 0.25rem; /* Add a slight rounding, if desired */
-}
-
-
-#navbarNav {
-  margin-right: 207px;
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
 }
