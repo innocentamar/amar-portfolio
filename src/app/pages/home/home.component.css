@@ -59,7 +59,7 @@ body {
   overflow: hidden;
   animation: typing 4s steps(100, end), blink 0.75s step-end infinite;
   font-family: 'Chakra Petch', serif; /* Apply the unique font */
-  font-weight: 500; /* Adjust weight as needed */
+  font-weight: 300; /* Adjust weight as needed */
   color: #fff; /* Ensure text is visible */
 }
 
