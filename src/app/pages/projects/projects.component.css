@@ -1,0 +1,74 @@
+/* Projects Section Styling */
+.projects-section {
+    padding: 60px 0;
+    background-color: #000000; /* Background color from palette */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FF0000; /* Title color from palette */
+    margin-bottom: 40px;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .project-item {
+    margin-bottom: 30px; /* Space between rows */
+  }
+  
+  .project-card {
+    border: 1px solid #950101; /* Border color from palette */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 200px; /* Fixed height for uniformity */
+    object-fit: cover;
+  }
+  
+  .project-info {
+    padding: 15px;
+    background-color: #000000; /* Background color from palette */
+    color: #FFFFFF; /* Text color */
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #FF0000; /* Title color from palette */
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .project-link {
+    color: #FF0000; /* Link color from palette */
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .project-item {
+      margin-bottom: 20px; /* Less space on smaller screens */
+    }
+  }
+  
