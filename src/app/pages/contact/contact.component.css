@@ -1,8 +1,10 @@
+/* Contact Section */
 .contact-section {
     padding: 60px 0;
     background-color: #f8f9fa;
 }
 
+/* Section Title */
 .section-title {
     font-size: 2rem;
     font-weight: 600;
@@ -10,9 +12,11 @@
     margin-bottom: 40px;
 }
 
+/* Contact Info */
 .contact-info h3 {
     font-size: 1.5rem;
     font-weight: 600;
+    color: #000000;
     margin-bottom: 20px;
 }
 
@@ -37,6 +41,7 @@
     margin-right: 10px;
 }
 
+/* Contact Form */
 .form-group {
     margin-bottom: 20px;
 }
