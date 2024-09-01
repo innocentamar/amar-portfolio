@@ -1,28 +1,29 @@
 /* Contact Section */
 .contact-section {
     padding: 60px 0;
-    background-color: #f8f9fa;
+    background-color: #000000; /* Black background */
+    color: #FFFFFF; /* White text color */
 }
 
 /* Section Title */
 .section-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 40px;
+    font-size: 2.5rem; /* Slightly larger font */
+    font-weight: 700;
+    color: #FF0000; /* Red color for title */
+    margin-bottom: 50px; /* Increased space below the title */
 }
 
 /* Contact Info */
 .contact-info h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #000000;
-    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FFFFFF; /* White text color */
+    margin-bottom: 25px;
 }
 
 .contact-info p {
     font-size: 1.2rem;
-    color: #333;
+    color: #CCCCCC; /* Light gray for text */
 }
 
 .contact-info ul {
@@ -32,33 +33,44 @@
 
 .contact-info ul li {
     font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
+    color: #FFFFFF; /* White text color */
+    margin-bottom: 15px; /* Increased margin for better spacing */
 }
 
 .contact-info ul li i {
-    color: #FF0000;
-    margin-right: 10px;
+    color: #FF0000; /* Red icon color */
+    margin-right: 15px; /* Increased spacing between icon and text */
 }
 
 /* Contact Form */
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Increased margin for better spacing */
 }
 
 .form-control {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 12px; /* Slightly increased padding */
+    background-color: #333333; /* Dark gray background for inputs */
+    border: 1px solid #555555; /* Darker border */
+    color: #FFFFFF; /* White text color */
     border-radius: 5px;
 }
 
+.form-control::placeholder {
+    color: #CCCCCC; /* Light gray placeholder text */
+}
+
 .btn-primary {
-    background-color: #FF0000;
+    background-color: #FF0000; /* Red button background */
     border-color: #FF0000;
+    padding: 12px 30px; /* Increased padding for a more prominent button */
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: 600;
+    border-radius: 50px; /* Rounded button for a more modern look */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
 }
 
 .btn-primary:hover {
-    background-color: #950101;
+    background-color: #950101; /* Darker red on hover */
     border-color: #950101;
 }
