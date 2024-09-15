@@ -74,3 +74,11 @@
     background-color: #950101; /* Darker red on hover */
     border-color: #950101;
 }
+
+
+.invalid-feedback {
+    display: block; /* Ensure the feedback is visible */
+    color: #dc3545; /* Red color for error messages */
+    font-size: 0.875em; /* Smaller font size for feedback */
+  }
+  
