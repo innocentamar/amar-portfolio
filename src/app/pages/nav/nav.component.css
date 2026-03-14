@@ -1,0 +1,60 @@
+/* Navbar customization */
+
+body {
+    padding-top: 100px; /* space for sticky navbar */
+}
+.navbar {
+  position: fixed;
+    width: 100%;
+    z-index: 1030;
+    padding: 0.5rem 1rem; /* smaller padding to fit mobile */
+    background-color: #000000 !important;
+    
+}
+
+.sticky-top {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Navigation Bar */
+
+
+.navbar a {
+  color: #FFE6E6;
+}
+
+.navbar a:hover {
+  color: #FF2626;
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #000000; /* keeps background black */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 0.5rem 0;
+    }
+}

@@ -1,0 +1,85 @@
+<section class="hero-section">
+
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Left Side -->
+      <div class="col-md-7 hero-text">
+
+        <h1>
+          Hi, I'm <span>Amar Sharma</span>
+        </h1>
+
+        <h3 class="typing-role">
+          <span #typedElement></span>
+        </h3>
+
+        <p class="hero-tech">
+          ASP.NET Core • Angular • SQL Server • REST APIs
+        </p>
+
+        <!-- API STATUS -->
+        <div class="api-status">
+          <p>
+            Backend Status:
+            <span [ngClass]="apiOnline === 'true' ? 'status-online' : 'status-offline'">
+              {{ apiOnline === 'true' ? 'ONLINE' : 'OFFLINE' }}
+            </span>
+          </p>
+        </div>
+
+        <p class="hero-description">
+          Software Engineer with 3+ years of experience building scalable
+          enterprise applications using ASP.NET Core, Angular and SQL Server.
+          Experienced in banking and financial systems handling high-volume
+          transactions and secure APIs.
+        </p>
+
+        <!-- Buttons -->
+        <div class="hero-buttons">
+
+          <a routerLink="/projects" class="btn-primary">
+            View Projects
+          </a>
+
+          <a href="assets/Resume/Amar_Sharma_Resume_dotNet_fullStack.pdf" download class="btn-outline">
+            Download Resume
+          </a>
+
+        </div>
+
+        <!-- NEW SINGLE ROW STATS -->
+        <div class="hero-stats" style="display:flex;justify-content: space-between;">
+
+          <div class="stat">
+            <h4>{{experienceCount}}+</h4>
+            <p>Years Experience</p>
+          </div>
+
+          <div class="stat">
+            <h4>{{apiCount}}+</h4>
+            <p>APIs Developed</p>
+          </div>
+
+          <div class="stat">
+            <h4>{{projectCount}}+</h4>
+            <p>Enterprise Projects</p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Side Image -->
+      <div class="col-md-5 hero-image">
+
+        <div class="photo-glow">
+          <img src="assets/Amar-image.jpg" alt="Amar Sharma">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>

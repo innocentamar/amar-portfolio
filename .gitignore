@@ -1,0 +1,8 @@
+.angular/
+node_modules/
+dist/
+bin/
+obj/
+.vs/
+.vscode/
+.env

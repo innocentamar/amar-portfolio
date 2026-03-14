@@ -1,0 +1,132 @@
+/* Experience Section */
+
+.experience-section{
+padding:80px 0;
+background:#000;
+color:#fff;
+}
+
+/* Title */
+
+.section-title{
+font-size:2.5rem;
+color:#ff0000;
+margin-bottom:60px;
+}
+
+/* Timeline */
+
+.timeline{
+position:relative;
+max-width:900px;
+margin:auto;
+}
+
+.timeline::before{
+content:'';
+position:absolute;
+left:20px;
+top:0;
+width:3px;
+height:100%;
+background:#ff0000;
+}
+
+/* Timeline Item */
+
+.timeline-item{
+position:relative;
+padding-left:60px;
+margin-bottom:50px;
+}
+
+/* Dot */
+
+.timeline-dot{
+position:absolute;
+left:12px;
+top:8px;
+width:18px;
+height:18px;
+background:#ff0000;
+border-radius:50%;
+box-shadow:0 0 10px #ff0000;
+}
+
+/* Card */
+
+.timeline-content{
+background:#111;
+padding:25px;
+border-radius:10px;
+transition:0.3s;
+}
+
+.timeline-content:hover{
+transform:translateY(-5px);
+box-shadow:0 0 25px rgba(255,0,0,0.6);
+}
+
+/* Role */
+
+.timeline-content h3{
+color:#ff0000;
+font-size:1.4rem;
+margin-bottom:3px;
+}
+
+/* Company */
+
+.timeline-content h4{
+color:#ccc;
+margin-bottom:5px;
+}
+
+/* Date */
+
+.timeline-date{
+font-size:0.9rem;
+color:#888;
+display:block;
+margin-bottom:15px;
+}
+
+/* Points */
+
+.experience-points{
+padding-left:18px;
+}
+
+.experience-points li{
+margin-bottom:8px;
+font-size:0.95rem;
+color:#ccc;
+}
+
+/* Tech badges */
+
+.tech-used{
+margin-top:15px;
+}
+
+.tech-used span{
+background:#ff0000;
+padding:4px 10px;
+border-radius:5px;
+font-size:12px;
+margin-right:6px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.timeline-item{
+padding-left:50px;
+}
+
+.timeline::before{
+left:15px;
+}
+
+}

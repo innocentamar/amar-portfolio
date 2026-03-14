@@ -1,0 +1,188 @@
+/* ================================================================
+   HERO SECTION 
+================================================================
+*/
+
+.hero-section {
+  background: #000;
+  color: #fff;
+  padding: 100px 0;
+}
+
+/* --- Hero Text & Typography --- */
+.hero-text h1 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.hero-text .highlight {
+  color: #ff0000;
+}
+
+.hero-text h3 {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 1.7rem;
+  color: #ddd;
+  margin-top: 12px;
+}
+
+.hero-description {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #bbb;
+}
+
+/* --- Typing Role Component --- */
+.typing-role {
+  margin-top: 12px;
+  font-size: 1.7rem;
+  color: #ddd;
+  min-height: 40px;
+}
+
+.typing-role span {
+  color: #ff0000;
+  font-weight: 600;
+}
+
+/* ================================================================
+   INTERACTIVE ELEMENTS (Buttons & Status)
+================================================================
+*/
+
+.hero-buttons {
+  margin-top: 30px;
+  margin-bottom: 39px;
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: #ff0000;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #cc0000;
+}
+
+.btn-outline {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #ff0000;
+  color: #fff;
+}
+
+/* --- API Status Indicators --- */
+.api-status {
+  margin: 10px 0 15px 0;
+  font-size: 14px;
+}
+
+.status-online {
+  color: #00ff9d;
+  font-weight: 600;
+}
+
+.status-offline {
+  color: #ff4d4d;
+  font-weight: 600;
+}
+
+.status-online::before {
+  content: "● ";
+  display: inline-block;
+  animation: pulse 1.5s infinite;
+}
+
+.status-offline::before {
+  content: "● ";
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
+
+/* ================================================================
+   HERO IMAGE
+================================================================
+*/
+
+.hero-image {
+  text-align: center;
+}
+
+.hero-image img {
+  width: 90vw;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ff0000;
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.7);
+  transition: 0.4s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.06);
+}
+
+/* ================================================================
+   MOBILE RESPONSIVE (Max-width: 768px)
+================================================================
+*/
+
+@media (max-width: 768px) {
+  .hero-text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-image img {
+    width: 220px;
+  }
+
+  .hero-tech {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #bbb;
+    letter-spacing: 1px;
+  }
+
+  .hero-stats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-stats h4 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ff0000;
+    margin: 0;
+  }
+
+  .hero-stats p {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #bbb;
+  }
+}

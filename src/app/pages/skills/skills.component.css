@@ -1,0 +1,89 @@
+/* Skills Section */
+
+.skills-section{
+    padding:80px 0;
+    background:#000;
+    color:#fff;
+}
+
+/* Titles */
+
+.section-title{
+    font-size:2.3rem;
+    font-weight:600;
+    color:#ff0000;
+}
+
+.section-subtitle{
+    color:#ccc;
+    margin-bottom:50px;
+}
+
+/* Skill Card */
+
+.skill-card{
+    background:#111;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:25px;
+    transition:0.4s;
+    position:relative;
+}
+
+/* Glow Hover Effect */
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,0,0,0.6);
+}
+
+/* Header */
+
+.skill-header{
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.skill-header img{
+    width:35px;
+    margin-right:12px;
+}
+
+.skill-header h4{
+    font-size:1.2rem;
+    margin:0;
+}
+
+/* Skill Bar */
+
+.skill-bar{
+    height:8px;
+    background:#333;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.skill-progress{
+    height:8px;
+    background:#ff0000;
+    width:0;
+    border-radius:10px;
+    position:relative;
+    animation:loadSkill 2s forwards;
+}
+
+.skill-progress span{
+    position:absolute;
+    right:0;
+    top:-20px;
+    font-size:12px;
+}
+
+/* Animation */
+
+@keyframes loadSkill{
+    from{
+        width:0;
+    }
+}

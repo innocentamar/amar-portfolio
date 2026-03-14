@@ -1,0 +1,47 @@
+/* About Us Section Styling */
+.about-section {
+    padding: 60px 0;
+    background-color: #000000; /* Background color from palette */
+    color: #FFFFFF; /* Text color */
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #FF0000; /* Title color from palette */
+    margin-bottom: 20px;
+  }
+  
+  .about-text {
+    padding: 20px;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-image {
+    text-align: center; /* Center the image */
+  }
+  
+  .about-image img {
+    width: 80%;
+    max-width: 400px; /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .about-text, .about-image {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .about-image img {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+  
